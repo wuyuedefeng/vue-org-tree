@@ -1,3 +1,8 @@
-import Vue2OrgTree from './components/org-tree'
+import Vue from 'vue'
+import App from './App.vue'
 
-export default Vue2OrgTree
+Vue.config.productionTip = false
+
+new Vue({
+  render: h => h(App),
+}).$mount('#app')
