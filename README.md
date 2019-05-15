@@ -1,4 +1,6 @@
-Fork from `https://github.com/hukaibaihu/vue-org-tree/blob/master/src/components/org-tree/org-tree.vue`
+# 拓展支持自定义节点样式 和 自定义折叠图标
+
+## Base Usage
 
 ```
 <vue2-org-tree :data="data" collapsable>
@@ -11,6 +13,10 @@ Fork from `https://github.com/hukaibaihu/vue-org-tree/blob/master/src/components
   </div>
 </vue2-org-tree>
 ```
+
+[demo code](./src/components/HelloWorld.vue)
+
+## 效果
 
 ![default](./src/assets/1557901388894_图片.png)
 ![horizontal](./src/assets/1557901425456_图片.png)
