@@ -14,6 +14,21 @@ npm install node-sass --save-dev
 npm install sass-loader --save-dev
 ```
 
+## API
+
+  * #### props
+
+
+	prop           | descripton                   | type                   | default
+	---------------|------------------------------|:----------------------:|---------------------
+	data           |                              | `Object`               |
+	labelKey       | label的key                   | `String`               | `label`
+	childrenKey    | children的key                | `String`               | `children`
+	expandKey      | 展开状态标识的key              | `String`               | `expand`
+	horizontal     | 水平展示                      | `Boolean`              |  false
+	collapsable    | 是否支持展开                   | `Boolean`              |  false
+
+
 ## Base Usage
 
 ```
