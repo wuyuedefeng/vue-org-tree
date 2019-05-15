@@ -1,5 +1,19 @@
 # 拓展支持自定义节点样式 和 自定义折叠图标
 
+## Install
+
+```
+$ npm i vue-org-tree-ext -S
+```
+
+> 依赖 `sass[scss]` support
+
+if your project can't support scss please add below dependence
+```
+npm install node-sass --save-dev
+npm install sass-loader --save-dev
+```
+
 ## Base Usage
 
 ```
