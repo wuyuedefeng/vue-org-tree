@@ -11,3 +11,6 @@ Fork from `https://github.com/hukaibaihu/vue-org-tree/blob/master/src/components
   </div>
 </vue2-org-tree>
 ```
+
+![default](./src/assets/1557901388894_图片.png)
+![horizontal](./src/assets/1557901425456_图片.png)

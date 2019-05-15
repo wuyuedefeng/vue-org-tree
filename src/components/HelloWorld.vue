@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <vue2-org-tree :data="data" collapsable>
+    <vue2-org-tree :data="data" collapsable horizontal>
       <template slot-scope="{item}">
         {{item.label}} === <button>添加</button><button>详情</button>
       </template>
