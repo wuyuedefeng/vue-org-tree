@@ -1,5 +1,5 @@
 <template>
-  <div class="_vue-org-tree-ext-container">
+  <div class="_vue-org-tree2-container">
     <div class="org-tree" :class="{horizontal, collapsable}">
       <org-tree-node
         :data="data" :labelKey="labelKey" :childrenKey="childrenKey" :expandKey="expandKey"

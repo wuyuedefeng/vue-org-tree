@@ -1,5 +1,6 @@
-$line-width: 20px;
-._vue-org-tree-ext-container {
+$_vue-org-tree2_line-width: 50px !default;
+$_vue-org-tree2_line-height: 50px !default;
+._vue-org-tree2-container {
   display: inline-block;
   padding: 15px;
   background-color: #fff;
@@ -53,7 +54,7 @@ $line-width: 20px;
     left: 50%;
     z-index: 10;
     margin-left: 0;
-    margin-top: $line-width;
+    margin-top: $_vue-org-tree2_line-width;
     //background-color: #f00;
     cursor: pointer;
     transform: translate(-50%, -50%);
@@ -72,13 +73,13 @@ $line-width: 20px;
     }
   }
   .org-tree-node {
-    padding-top: $line-width;
+    padding-top: $_vue-org-tree2_line-width;
     display: table-cell;
     vertical-align: top;
 
     &.is-leaf, &.collapsed {
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: $_vue-org-tree2_line-height / 2;
+      padding-right: $_vue-org-tree2_line-height / 2;
     }
 
     &:before, &:after {
@@ -87,7 +88,7 @@ $line-width: 20px;
       top: 0;
       left: 0;
       width: 50%;
-      height: $line-width - 1;
+      height: $_vue-org-tree2_line-width - 1;
     }
 
     &:after {
@@ -110,7 +111,7 @@ $line-width: 20px;
       top: 100%;
       left: 0;
       width: 50%;
-      height: $line-width;
+      height: $_vue-org-tree2_line-width;
       border-right: 1px solid #ddd;
     }
   }
@@ -122,7 +123,7 @@ $line-width: 20px;
     }
   }
   .org-tree-node-children {
-    padding-top: $line-width;
+    padding-top: $_vue-org-tree2_line-width;
     display: table;
 
     &:before {
@@ -131,7 +132,7 @@ $line-width: 20px;
       top: 0;
       left: 50%;
       width: 0;
-      height: $line-width;
+      height: $_vue-org-tree2_line-width;
       border-left: 1px solid #ddd;
     }
 
@@ -151,11 +152,11 @@ $line-width: 20px;
       display: table-cell;
       float: none;
       padding-top: 0;
-      padding-left: $line-width;
+      padding-left: $_vue-org-tree2_line-width;
 
       &.is-leaf, &.collapsed {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: $_vue-org-tree2_line-height / 2;
+        padding-bottom: $_vue-org-tree2_line-height / 2;
       }
 
       &.is-leaf {
@@ -165,7 +166,7 @@ $line-width: 20px;
       }
 
       &:before, &:after {
-        width: $line-width - 1;
+        width: $_vue-org-tree2_line-width - 1;
         height: 50%;
       }
 
@@ -207,7 +208,7 @@ $line-width: 20px;
       .org-tree-node-label:after {
         top: 0;
         left: 100%;
-        width: $line-width;
+        width: $_vue-org-tree2_line-width;
         height: 50%;
         border-right: 0;
         border-bottom: 1px solid #ddd;
@@ -218,7 +219,7 @@ $line-width: 20px;
       top: 50%;
       left: 100%;
       margin-top: 0;
-      margin-left: $line-width;
+      margin-left: $_vue-org-tree2_line-width;
       transform: translate(-50%, -50%);
     }
 
@@ -233,12 +234,12 @@ $line-width: 20px;
       // align-items: flex-start;
       display: table-cell;
       padding-top: 0;
-      padding-left: $line-width;
+      padding-left: $_vue-org-tree2_line-width;
 
       &:before {
         top: 50%;
         left: 0;
-        width: $line-width;
+        width: $_vue-org-tree2_line-width;
         height: 0;
         border-left: 0;
         border-top: 1px solid #ddd;

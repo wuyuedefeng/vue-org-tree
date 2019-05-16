@@ -31,6 +31,12 @@ npm install node-sass --save-dev
 npm install sass-loader --save-dev
 ```
 
+> 如需更改边线宽高 请覆盖以下变量， 默认值如下：
+```
+$_vue-org-tree2_line-width: 50px !default;
+$_vue-org-tree2_line-height: 50px !default;
+```
+
 ## API
 
   * #### props
