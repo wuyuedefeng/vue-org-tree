@@ -1,18 +1,18 @@
 <template>
-  <div class="org-tree-node" :class="{'is-leaf': isLeaf, collapsed: !isLeaf && collapsable && !data[expandKey]}">
+  <div class="org-tree-node" :class="{'is-leaf': isLeaf, collapsed: !isLeaf && (collapsable && !data[expandKey] || !collapsable)}">
     <div class="org-tree-node-label">
       <div class="org-tree-node-label-inner">
         <slot :item="data">
           <span>{{data[labelKey]}}</span>
         </slot>
-        <div class="org-tree-node-btn-container" v-if="!isLeaf" :class="{expanded: !isLeaf && data[expandKey]}" @click="$set(data, expandKey, !data[expandKey])">
+        <div class="org-tree-node-btn-container" v-if="!isLeaf && collapsable" :class="{expanded: !isLeaf && data[expandKey]}" @click="$set(data, expandKey, !data[expandKey])">
           <slot name="expandBtn" :isExpanded="!isLeaf && data[expandKey]">
             <div class="org-tree-node-btn"></div>
           </slot>
         </div>
       </div>
     </div>
-    <div v-if="!isLeaf && data[expandKey]" class="org-tree-node-children">
+    <div v-if="!isLeaf && (collapsable && data[expandKey] || !collapsable)" class="org-tree-node-children">
       <org-tree-node v-for="(item, idx) in data[childrenKey]" :data="item" :labelKey="labelKey" :childrenKey="childrenKey" :expandKey="expandKey" :horizontal="horizontal" :collapsable="collapsable" :key="idx">
         <template slot-scope="{item: item}">
           <slot :item="item">
