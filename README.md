@@ -3,7 +3,24 @@
 ## Install
 
 ```
-$ npm i vue-org-tree-ext -S
+$ npm i vue-org-tree2 -S
+```
+
+### Register
+- global register
+```
+import Vue from 'vue'
+import VueOrgTree from 'vue-org-tree2'
+Vue.use(VueOrgTree)
+```
+component register
+ ```
+import VueOrgTree from 'vue-org-tree2'
+export default {
+  components: {
+    [VueOrgTree.name]: VueOrgTree
+  }
+}
 ```
 
 > 依赖 `sass[scss]` support
@@ -32,7 +49,7 @@ npm install sass-loader --save-dev
 ## Base Usage
 
 ```
-<vue2-org-tree :data="data" collapsable>
+<vue-org-tree :data="data" collapsable>
   <template slot-scope="{item}">
     {{item.label}} === <button>添加</button><button>详情</button>
   </template>

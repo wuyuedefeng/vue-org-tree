@@ -18,7 +18,7 @@
 // import render from './node'
 import OrgTreeNode from './org-tree-node'
 export default {
-  name: 'Vue2OrgTree',
+  name: 'VueOrgTree',
   props: {
     data: {
       type: Object,

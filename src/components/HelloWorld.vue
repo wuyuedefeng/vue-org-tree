@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <vue2-org-tree :data="data" collapsable horizontal>
+    <vue-org-tree :data="data" collapsable horizontal>
       <template slot-scope="{item}">
         {{item.label}} === <button>添加</button><button>详情</button>
       </template>
@@ -8,7 +8,7 @@
         <div v-if="isExpanded" style="border: 1px solid #9b9b9b; background: #fff;width: 20px; height: 20px; display: flex; align-items: center; justify-content: center">-</div>
         <div v-else style="border: 1px solid #9b9b9b; background: #fff; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center"> + </div>
       </div>
-    </vue2-org-tree>
+    </vue-org-tree>
   </div>
 </template>
 
