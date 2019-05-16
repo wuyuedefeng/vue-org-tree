@@ -1,5 +1,6 @@
 # 拓展支持自定义节点样式 和 自定义折叠图标
 
+[![npm](https://img.shields.io/npm/v/vue-org-tree2.svg?style=flat-square)](https://www.npmjs.com/package/vue-org-tree2)
 ## Install
 
 ```
